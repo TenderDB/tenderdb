@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<meta name="yandex-verification" content="1efa950ac0bfa254" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{{if .Name}}
+<title>
+  {{.Name}}
+</title>
+<meta name="description" content="{{.Name}}" />
+{{end}}{{if not .Name}}
+<title>
+  Объем закупок 44ФЗ
+</title>
+<meta name="description" content="Объем закупок 44ФЗ" />
+{{end}}
+{{template "_js_css.html" .}}
+  </head>
+  <body>
+    {{template "_header.html" .}}{{template "index_content.html" .}}
+  </body>
+</html>
